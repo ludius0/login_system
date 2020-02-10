@@ -125,7 +125,7 @@ def register():
     r_last_name_entry = Entry(root2)
     r_last_name_entry.grid(row=3, column=1)
 
-    sign_up = Button(root2, text="Register to database", command=lambda:sign_up_to_db(r_username_entry, r_password_entry, r_first_name_entry, r_last_name_entry)).grid(row=4, column=1)
+    sign_up = Button(root2, text="Register to database", command=lambda:sign_up_to_db(r_username_entry, r_password_entry, r_first_name_entry, r_last_name_entry)).grid(row=4, column=1, ipady=10)
     ###
     
     root2.mainloop()
@@ -143,8 +143,8 @@ password_entry = Entry(root, show="*")
 password_entry.grid(row=1, column=1)
 
 # Buttons
-sign_in_b = Button(root, text="Sign In", command=lambda:login(username_entry, password_entry)).grid(row=2, column=1)
-register_in = Button(root, text="Register", command=register).grid(row=3, column=1)
+sign_in_b = Button(root, text="Sign In", command=lambda:login(username_entry, password_entry)).grid(row=2, column=1, ipadx=29, ipady=10)
+register_in = Button(root, text="Register", command=register).grid(row=3, column=1, ipadx=26, ipady=10)
 restart = Button(root, text="Generate new\n database and key", command=generate_key_and_db).grid(row=4, column=1)
 
 
