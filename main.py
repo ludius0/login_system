@@ -1,7 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
 #from cryptography.fernet import Fernet
-from getpass import getpass
 import sqlite3
 
 # Set up main screen
